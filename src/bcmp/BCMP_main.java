@@ -14,9 +14,9 @@ public class BCMP_main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int N = 100, K = 12, c = 2;
+		int N = 10, K = 12, c = 2;
 		int node_index[] = {14,15,17,18,21,24,27,29,31,34};
-		int nc[] = {50,50};//各クラスの最大値
+		int nc[] = {5,5};//各クラスの最大値
 		double mu[][] = {{5,5,10,5,5,5,5,5,5,10,5,10}, {5,5,10,5,5,5,5,5,5,10,5,10}};//サービス率
 		double mu_sim[] = {5,5,10,5,5,5,5,5,5,10,5,10,5,5,10,5,5,5,5,5,5,10,5,10};//シミュレーション用サービス率
 		double [][]r = new double[K * c][K * c];
@@ -48,7 +48,7 @@ public class BCMP_main {
 		//};
 		
 		//(3)DB連携の準備
-		int combination_id = 2, transition_id = 1;
+		int combination_id = 1, transition_id = 1;
 		MySQL mysql = new MySQL(combination_id, transition_id);
 		//int combination_number = mysql.getCombinations();
 		//System.out.println("Combination_id = "+combination_id+",総数 = "+combination_number);
